@@ -1,0 +1,7 @@
+{
+  "name": "@amollo-assy/webpack-tsx-app",
+  "scopeCommitName": "assy:wtxa",
+  "scripts": {
+    "build": "echo build"
+  }
+}
