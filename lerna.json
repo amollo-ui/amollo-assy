@@ -1,6 +1,7 @@
 {
   "packages": [
-    "@assembly/*"
+    "@assembly/*",
+    "packages/*"
   ],
   "version": "independent",
   "npmClient": "yarn",

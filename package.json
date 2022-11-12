@@ -18,7 +18,8 @@
     },
     "workspaces": {
         "packages": [
-            "@assembly/*"
+            "@assembly/*",
+            "packages/*"
         ]
     },
     "scripts": {
