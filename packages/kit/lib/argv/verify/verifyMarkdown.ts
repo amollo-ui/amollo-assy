@@ -1,10 +1,10 @@
 import chalk from "chalk";
 import { join } from "path";
 import fs from "fs";
-import { wsDirSourcePath } from "../../paths/wsPaths";
+import { KWsPaths } from "../../paths";
 
 const requiredMdConfigVerify = () => {
-    const contentPath = join(wsDirSourcePath, "content");
+    const contentPath = join(KWsPaths.wsDirSourcePath, "content");
 
     if (!fs.existsSync(contentPath)) {
         throw new Error(

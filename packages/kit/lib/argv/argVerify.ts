@@ -1,6 +1,6 @@
 import chalk from "chalk";
 import verifyMarkdown from "./verify/verifyMarkdown";
-import { configName } from "../options";
+import { KOptions } from "../options";
 import { parsedArgs } from "./arguments";
 import type { Configuration } from "webpack";
 
@@ -9,7 +9,7 @@ const getVerifyName = () => {
         return "markdown";
     }
 
-    return configName;
+    return KOptions.configName;
 };
 
 export const verify = (config: Configuration) => {

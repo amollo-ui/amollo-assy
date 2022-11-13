@@ -1,1 +1,1 @@
-export * as KEnv from "./vars";
+export * from "./vars";

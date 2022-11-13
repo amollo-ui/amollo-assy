@@ -1,2 +1,2 @@
-export * as KWsPaths from "./wsPaths";
+export * from "./wsPaths";
 export * as KPathUtils from "./utils";
