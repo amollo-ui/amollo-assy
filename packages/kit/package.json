@@ -1,9 +1,36 @@
 {
   "name": "@amollo-assy/kit",
   "scopeCommitName": "assy:kit",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "General build utilities",
   "license": "MIT",
+  "homepage": "https://github.com/amollo-ui/amollo-assy/packages/kit#readme",
+  "keywords": [
+    "amollo",
+    "assy",
+    "build",
+    "utilities",
+    "path"
+  ],
+  "bugs": {
+    "url": "https://github.com/amollo-ui/amollo-assy/issues"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "files": [
+    "build/main",
+    "build/module",
+    "!**/*.json",
+    "CHANGELOG.md",
+    "package.json",
+    "README.md"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:amollo-ui/amollo-assy.git",
+    "directory": "packages/kit"
+  },
   "main": "build/main/index.js",
   "typings": "build/main/index.d.ts",
   "module": "build/module/index.js",
@@ -19,15 +46,6 @@
     "fix": "yarn fix:js",
     "tsc:check": "tsc -v && tsc --noEmit"
   },
-  "files": [
-    "build/main",
-    "build/module",
-    "!**/*.json",
-    "CHANGELOG.md",
-    "LICENSE",
-    "package.json",
-    "README.md"
-  ],
   "devDependencies": {
     "@amollo-lint/eslint-config-ts-prettier": "^0.1.2",
     "@types/inquirer": "^9.0.2",
