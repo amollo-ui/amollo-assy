@@ -1,7 +1,112 @@
 {
   "name": "@amollo-assy/webpack-tsx-app",
   "scopeCommitName": "assy:wtxa",
+  "description": "Assembler for tsx apps",
+  "license": "MIT",
+  "version": "0.0.1",
+  "homepage": "https://github.com/amollo-ui/amollo-assy/@assembly/webpack-tsx-app#readme",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:amollo-ui/amollo-assy.git",
+    "directory": "@assembly/webpack-tsx-app"
+  },
+  "bugs": {
+    "url": "https://github.com/amollo-ui/amollo-assy/issues"
+  },
+  "engines": {
+    "node": ">=16.0.0",
+    "npm": ">=7.10.0",
+    "yarn": ">=1.22"
+  },
+  "main": "build/main/lib/index.js",
+  "typings": "build/main/lib/index.d.ts",
+  "module": "build/module/lib/index.js",
+  "bin": {
+    "wtxa": "./build/main/bin/wtxa.js"
+  },
+  "files": [
+    "build/main",
+    "build/module",
+    "!**/*.json",
+    "CHANGELOG.md",
+    "package.json",
+    "README.md"
+  ],
   "scripts": {
-    "build": "echo build"
-  }
+    "build": "rimraf build && run-p build:main build:module",
+    "build:main": "tsc -p tsconfig.json",
+    "build:module": "tsc -p tsconfig.json --target 'esnext' --outDir 'build/module' --module esnext",
+    "watch:build": "tsc -p tsconfig.json --incremental --inlineSourceMap -w",
+    "_________________________ lint _________________________": "______",
+    "lint:js": "eslint \"lib/**/*.{ts,tsx}\" \"bin/**/*.{ts,tsx}\" \"src/**/*.{ts,tsx}\"",
+    "fix:js": "yarn lint:js --fix",
+    "lint": "run-s lint:js tsc:check",
+    "fix": "yarn fix:js",
+    "tsc:check": "tsc -v && tsc --noEmit"
+  },
+  "devDependencies": {
+    "@amollo-lint/eslint-config-ts-prettier": "^0.1.2",
+    "@types/case-sensitive-paths-webpack-plugin": "^2.1.6",
+    "@types/friendly-errors-webpack-plugin": "^0.1.4",
+    "@types/node": "^18.8.3",
+    "@types/webpack": "^5.28.0",
+    "@types/webpack-bundle-analyzer": "^4.6.0",
+    "@types/webpack-hot-middleware": "^2.25.6",
+    "eslint": "^8.24.0",
+    "npm-run-all": "^4.1.5",
+    "prettier": "^2.7.1",
+    "rimraf": "^3.0.2",
+    "ts-node": "^9.0.0",
+    "typescript": "^4.0.2"
+  },
+  "dependencies": {
+    "@amollo-assy/kit": "workspace:^",
+    "@svgr/webpack": "^6.5.0",
+    "babel-loader": "^8.2.5",
+    "cache-loader": "^4.1.0",
+    "case-sensitive-paths-webpack-plugin": "^2.4.0",
+    "chalk": "4.1.2",
+    "clean-webpack-plugin": "^4.0.0",
+    "copy-webpack-plugin": "^11.0.0",
+    "css-loader": "^6.7.1",
+    "cssnano": "^5.1.14",
+    "eslint-webpack-plugin": "^3.2.0",
+    "fork-ts-checker-webpack-plugin": "^7.2.13",
+    "friendly-errors-webpack-plugin": "^1.7.0",
+    "html-loader": "^4.2.0",
+    "html-webpack-plugin": "^5.5.0",
+    "mini-css-extract-plugin": "^2.6.1",
+    "null-loader": "^4.0.1",
+    "path-browserify": "^1.0.1",
+    "postcss-flexbugs-fixes": "^5.0.2",
+    "postcss-loader": "^7.0.1",
+    "postcss-preset-env": "^7.8.2",
+    "resolve-url-loader": "^5.0.0",
+    "sass": "^1.55.0",
+    "sass-loader": "^13.1.0",
+    "source-map-loader": "^4.0.1",
+    "style-loader": "^3.3.1",
+    "terser-webpack-plugin": "^5.3.6",
+    "thread-loader": "^3.0.4",
+    "ts-loader": "^9.4.1",
+    "tsconfig-paths-webpack-plugin": "^4.0.0",
+    "webpack": "^5.74.0",
+    "webpack-bundle-analyzer": "^4.6.1",
+    "webpack-dev-server": "^4.11.1",
+    "webpack-hot-middleware": "^2.25.2",
+    "webpack-merge": "^5.8.0",
+    "webpack-pwa-manifest": "^4.3.0",
+    "webpackbar": "^5.0.2",
+    "workbox-webpack-plugin": "^6.5.4"
+  },
+  "peerDependencies": {
+    "react": ">= 17",
+    "typescript": "^3.2.1 || ^4"
+  },
+  "peerDependenciesMeta": {
+    "typescript": {
+      "optional": true
+    }
+  },
+  "packageManager": "yarn@3.1.1"
 }
