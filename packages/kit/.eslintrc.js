@@ -6,4 +6,7 @@ module.exports = {
         "tsconfigRootDir": __dirname,
     },
     "ignorePatterns": ["build"],
+    "rules": {
+        "@typescript-eslint/no-namespace": "off",
+    },
 };
