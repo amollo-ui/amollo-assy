@@ -23,7 +23,7 @@ export const parsedArgs: IDataParseArguments | null =
     nodeArgs.length > 0 ? parseArguments(nodeArgs) : null;
 export const isIncludeScript = includesCommand.includes(script);
 
-if (!script && bin !== "wrmx-gct") {
+if (!script && bin !== "wmxa-gct") {
     console.error(chalk.yellow("🔍 The script field is empty"));
     process.exit(1);
 }
