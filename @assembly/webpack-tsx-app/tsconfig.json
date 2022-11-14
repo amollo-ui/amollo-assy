@@ -7,7 +7,7 @@
     "sourceMap": false,
     "outDir": "build/main",
     "rootDirs": ["lib", "bin", "src"],
-    "resolveJsonModule":false,
+    "resolveJsonModule": false,
     "module": "UMD",
     "declaration": true,
     "lib": ["es2017"],
