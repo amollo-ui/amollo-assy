@@ -3,7 +3,7 @@
   "scopeCommitName": "assy:wmxa",
   "description": "Assembler for mdx apps",
   "license": "MIT",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "homepage": "https://github.com/amollo-ui/amollo-assy/tree/master/@assembly/webpack-mdx-app#readme",
   "keywords": [
     "amollo",
