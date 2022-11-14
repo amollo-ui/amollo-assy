@@ -5,7 +5,7 @@ __metadata:
   version: 5
   cacheKey: 8
 
-"@amollo-assy/kit@workspace:^, @amollo-assy/kit@workspace:packages/kit":
+"@amollo-assy/kit@^0.1.0, @amollo-assy/kit@workspace:packages/kit":
   version: 0.0.0-use.local
   resolution: "@amollo-assy/kit@workspace:packages/kit"
   dependencies:
@@ -31,7 +31,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@amollo-assy/webpack-tsx-app@workspace:@assembly/webpack-tsx-app"
   dependencies:
-    "@amollo-assy/kit": "workspace:^"
+    "@amollo-assy/kit": ^0.1.0
     "@amollo-lint/eslint-config-ts-prettier": ^0.1.2
     "@svgr/webpack": ^6.5.0
     "@types/case-sensitive-paths-webpack-plugin": ^2.1.6
