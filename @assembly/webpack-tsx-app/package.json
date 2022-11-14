@@ -3,8 +3,20 @@
   "scopeCommitName": "assy:wtxa",
   "description": "Assembler for tsx apps",
   "license": "MIT",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "homepage": "https://github.com/amollo-ui/amollo-assy/@assembly/webpack-tsx-app#readme",
+  "keywords": [
+    "amollo",
+    "assy",
+    "build",
+    "builder",
+    "webpack",
+    "tsx",
+    "config"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
   "repository": {
     "type": "git",
     "url": "git@github.com:amollo-ui/amollo-assy.git",
@@ -60,7 +72,7 @@
     "typescript": "^4.0.2"
   },
   "dependencies": {
-    "@amollo-assy/kit": "workspace:^",
+    "@amollo-assy/kit": "^0.1.0",
     "@svgr/webpack": "^6.5.0",
     "babel-loader": "^8.2.5",
     "cache-loader": "^4.1.0",
