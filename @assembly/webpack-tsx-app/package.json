@@ -5,6 +5,18 @@
   "license": "MIT",
   "version": "0.0.1",
   "homepage": "https://github.com/amollo-ui/amollo-assy/@assembly/webpack-tsx-app#readme",
+  "keywords": [
+    "amollo",
+    "assy",
+    "build",
+    "builder",
+    "webpack",
+    "tsx",
+    "config"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
   "repository": {
     "type": "git",
     "url": "git@github.com:amollo-ui/amollo-assy.git",
