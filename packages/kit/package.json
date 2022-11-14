@@ -1,10 +1,10 @@
 {
   "name": "@amollo-assy/kit",
   "scopeCommitName": "assy:kit",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "General build utilities",
   "license": "MIT",
-  "homepage": "https://github.com/amollo-ui/amollo-assy/packages/kit#readme",
+  "homepage": "https://github.com/amollo-ui/amollo-assy/tree/master/packages/kit#readme",
   "keywords": [
     "amollo",
     "assy",
